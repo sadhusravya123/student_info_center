@@ -1,98 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student ERP</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student ERP</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="layout">
-        <!-- Sidebar -->
-        <aside class="sidebar">
-            <h2>Student ERP</h2>
-            <a href="#" class="active">🏠 Dashboard</a>
-            <a href="#">👤 My Profile</a>
-            <a href="#">📚 Academics</a>
-            <a href="#">📅 Attendance</a>
-            <a href="#">📝 Examinations</a>
-            <a href="#">📢 Notices</a>
-            <a href="#">💳 Fees</a>
-            <a href="#">⚙ Settings</a>
-        </aside>
-        <!-- Main Content -->
-        <main class="main-content">
-            <div class="topbar">
-                <div>
-                    <h1>Dashboard</h1>
-                    <p>Welcome back, Sravya!</p>
-                </div>
+<div class="sidebar">
+<h2>🎓 ERP</h2>
+<a href="#dashboard">🏠 Dashboard</a>
+<a href="#profile">👤 Profile</a>
+<a href="#academics">📚 Academics</a>
+<a href="#attendance">📅 Attendance</a>
+<a href="#results">📈 Results</a>
+<a href="#fees">💳 Fees</a>
+<a href="#notices">📢 Notices</a>
 
-                <div class="profile">
-                    👤 Sravya
-                </div>
-            </div>
+</div>
 
-            <!-- Cards -->
-            <div class="cards">
+<div class="main">
 
-                <div class="card">
-                    <div class="icon">📚</div>
-                    <div>
-                        <h3>Attendance</h3>
-                        <h2>85%</h2>
-                    </div>
-                </div>
+<section id="dashboard">
+<h1>Dashboard</h1>
 
-                <div class="card">
-                    <div class="icon">🎓</div>
-                    <div>
-                        <h3>CGPA</h3>
-                        <h2>8.5</h2>
-                    </div>
-                </div>
+<div class="cards">
 
-                <div class="card">
-                    <div class="icon">📝</div>
-                    <div>
-                        <h3>Assignments</h3>
-                        <h2>12</h2>
-                    </div>
-                </div>
+<div class="card">
+<h3>CGPA</h3>
+<h2>8.5</h2>
+</div>
 
-                <div class="card">
-                    <div class="icon">📢</div>
-                    <div>
-                        <h3>Notices</h3>
-                        <h2>5</h2>
-                    </div>
-                </div>
+<div class="card">
+<h3>Attendance</h3>
+<h2>92%</h2>
+</div>
 
-            </div>
+<div class="card">
+<h3>Assignments</h3>
+<h2>12</h2>
+</div>
 
-            <!-- Bottom Sections -->
-            <div class="sections">
+<div class="card">
+<h3>Notices</h3>
+<h2>05</h2>
+</div>
 
-                <div class="box">
-                    <h2>Student Information</h2>
-                    <p><b>Name:</b> Sravya</p>
-                    <p><b>Course:</b> B.E / B.Tech</p>
-                    <p><b>Department:</b> CSE - AIML</p>
-                    <p><b>Semester:</b> 4th Semester</p>
-                </div>
+</div>
+</section>
 
-                <div class="box">
-                    <h2>Recent Notices</h2>
-                    <p>-Mid-term examinations will begin soon.</p>
-                    <p>-Submit assignments before the deadline.</p>
-                    <p>-Check the notice board regularly.</p>
-                </div>
+<section id="profile">
 
-            </div>
+<h1>Profile</h1>
 
-        </main>
+<div class="box">
 
-    </div>
+<p><b>Name:</b> Sravya</p>
+<p><b>Roll No:</b>160124748089</p>
+<p><b>Department:</b> CSE-AIML</p>
+<p><b>Semester:</b> V</p>
+<p><b>Email:</b> sadhusravya123@gmail.com</p>
+
+</div>
+
+</section>
+
+<section id="academics">
+
+<h1>Academics</h1>
+
+<div class="box">
+
+<table>
+
+<tr>
+<th>Subject</th>
+<th>Grade</th>
+</tr>
+
+<tr>
+<td>DBMS</td>
+<td>A</td>
+</tr>
+
+<tr>
+<td>Python</td>
+<td>A+</td>
+</tr>
+
+<tr>
+<td>Java</td>
+<td>B+</td>
+</tr>
+
+<tr>
+<td>PAI</td>
+<td>A+</td>
+</tr>
+
+<tr>
+<td>IML</td>
+<td>A</td>
+</tr>
+
+<tr>
+<td>DAA</td>
+<td>A</td>
+</tr>
+
+</table>
+
+</div>
+
+</section>
+
+<section id="attendance">
+
+<h1>Attendance</h1>
+
+<div class="box">
+
+<p>Overall Attendance : <b>92%</b></p>
+
+<progress value="92" max="100"></progress>
+
+</div>
+
+</section>
+
+<section id="results">
+
+<h1>Results</h1>
+
+<div class="box">
+
+<p>Semester CGPA : <b>8.5</b></p>
+<p>Status : <b>PASS</b></p>
+
+</div>
+
+</section>
+
+<section id="fees">
+
+<h1>Fees</h1>
+
+<div class="box">
+
+<p>Total Fee : ₹1,67,500</p>
+<p>Paid : ₹1,67,500</p>
+<p>Status : <span class="paid">Paid</span></p>
+
+</div>
+
+</section>
+
+<section id="notices">
+
+<h1>Latest Notices</h1>
+
+<div class="box">
+
+<ul>
+
+<li>Assignment Submission - 5 Aug</li>
+<li>Internal Exams - 10 Aug</li>
+<li>Hackathon Registration Open</li>
+
+</ul>
+
+</div>
+
+</section>
+
+</div>
 
 </body>
 </html>
